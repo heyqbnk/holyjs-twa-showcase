@@ -7,7 +7,7 @@ import {useBridge} from '../../providers/BridgeProvider';
 
 import {AnyActivity, SpeechActivity} from './types.ts';
 
-import activities from './activities.json';
+import activities from './activities.ts';
 import styles from './MainPage.module.scss';
 
 function isSpeechActivity(activity: AnyActivity): activity is SpeechActivity {
