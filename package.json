@@ -3,12 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "/holyjs-twa-showcase",
   "scripts": {
     "dev": "vite --port 3000",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "tunnel": "npx localtunnel -p 3000 -s holyjs-showcase"
+    "tunnel": "npx localtunnel -p 3000 -s holyjs-showcase",
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@twa-dev/sdk": "^6.4.2",
@@ -27,6 +30,7 @@
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "gh-pages": "^5.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
   }
