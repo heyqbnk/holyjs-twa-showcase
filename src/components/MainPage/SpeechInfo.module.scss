@@ -1,0 +1,106 @@
+.root {
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+.timeline {
+  line-height: 20px;
+}
+
+.room {
+  color: #6a737c;
+  font-weight: 500;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.activityType {
+  color: #6a737c;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: 'Golos Text', 'Roboto', 'SF Pro Text', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+.chips {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  color: #6a737c;
+  height: 32px;
+  padding: 6px 8px;
+  text-transform: uppercase;
+}
+
+.topics {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topic {
+  border-radius: 6px;
+  padding: 6px 8px;
+  color: #0f172a;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #e8ebee;
+}
+
+.people {
+  & + & {
+    margin-top: 16px;
+  }
+
+  &Title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &Item {
+    margin-top: 10px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #f7f8f9;
+  }
+}
+
